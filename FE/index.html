@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOWER.vn - Trang Chủ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* CSS tùy chỉnh */
+        body {
+            background-color: #ffe6e6; /* Nền hồng nhạt */
+            font-family: Arial, sans-serif;
+        }
+        /* Loại bỏ hiệu ứng sọc dọc và chỉ giữ lại màu nền */
+        .striped-bg {
+            background-color: #ffe6e6; 
+        }
+        /* Màu chữ thương hiệu đỏ đậm cho FLOWER.vn */
+        .text-red-600-flower {
+            color: #E3004C; /* Màu đỏ đậm */
+        }
+        /* Đảm bảo hình ảnh sản phẩm có tỷ lệ khung hình nhất quán */
+        .product-card img {
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+        }
+        /* Style tùy chỉnh cho logo để đảm bảo không bị ép/méo */
+        .logo-responsive {
+            height: auto; /* Chiều cao tự động */
+            max-width: 100%;
+            object-fit: contain; /* Đảm bảo hình ảnh vừa vặn mà không bị cắt */
+        }
+    </style>
+</head>
+<body>
+
+<div class="min-h-screen">
+
+    <header class="bg-white py-3 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="/FE/assets/img/banner-logo/logo.jpg" alt="FLOWER Icon" class="h-10 w-auto logo-responsive">
+            </div>
+            <div class="hidden lg:flex space-x-4 text-sm">
+                <span>Hotline: 0943154187</span>
+                <a href="#" class="hover:text-red-600-flower">Kiểm tra đơn hàng</a>
+                <a href="#" class="hover:text-red-600-flower">Shop hoa tươi</a>
+                <a href="#" class="hover:text-red-600-flower">Đăng nhập & Đăng ký</a>
+            </div>
+            <button class="lg:hidden text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div class="container mx-auto px-4 mt-3 flex items-center space-x-2">
+             <button class="text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <div class="flex-grow flex border border-red-300 rounded-lg overflow-hidden">
+                <input type="text" placeholder="Tìm kiếm sản phẩm" class="p-2 flex-grow focus:outline-none">
+                <select class="p-2 border-l border-red-300 bg-gray-50 text-sm">
+                    <option>Tất cả</option>
+                    <option>Hoa Bó</option>
+                </select>
+                <button class="bg-red-600 text-white p-2 px-4 hover:bg-red-700">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                </button>
+            </div>
+             <button class="text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            </button>
+        </div>
+    </header>
+
+<!-- //Banner -->
+
+    <div class="container mx-auto px-4 mt-4">
+        <div class="relative bg-white rounded-lg overflow-hidden shadow-xl">
+            
+            <img src="/FE/assets/img/banner-logo/backround-banner.png" alt="Banner Background" class="w-full h-auto object-cover opacity-90" style="min-height: 200px;">
+            
+            <div class="absolute inset-0 flex flex-col justify-center items-center">                
+                <div class="text-center">
+                    <h1 class="text-6xl font-black text-red-600-flower tracking-wider">FLOWER<span class="text-4xl font-normal">.vn</span></h1>
+                    <p class="text-gray-600 text-lg">FLOWER - MUA HOA TRỰC TUYẾN HÀNG ĐẦU VIỆT NAM</p>
+                </div>
+            </div>
+
+<!-- //Menu -->
+            <div class="absolute bottom-0 w-full bg-white bg-opacity-80 py-2">
+                <div class="flex justify-center space-x-6 text-sm font-semibold text-gray-700">
+                    <a href="#" class="hover:text-red-600-flower">Hoa bó</a>
+                    <a href="#" class="hover:text-red-600-flower">Hoa lẵng</a>
+                    <a href="#" class="hover:text-red-600-flower">Hoa cưới</a>
+                    <a href="#" class="hover:text-red-600-flower">Hoa tình yêu</a>
+                    <a href="#" class="hover:text-red-600-flower">Hoa khai trương</a>
+                    <a href="#" class="hover:text-red-600-flower">Hoa chia buồn</a>
+                    <a href="#" class="hover:text-red-600-flower">Hoa baby</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- //SP HOT -->
+
+    <div class="container mx-auto px-4 mt-6">
+        <div class="flex items-center space-x-2 text-xl font-bold text-red-600-flower mb-4">
+            <span class="text-2xl">🔥</span>
+            <h2>HOT SALE CUỐI TUẦN</h2>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden relative">
+                <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">-10%</span>
+                <img src="/FE/assets/img/flowers/bo-hoa-hong-xanh-280x373.jpg" alt="Hoa Bó Baby Xanh Siêu To" class="w-full h-auto">
+                <div class="p-3">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Baby Xanh Siêu To</p>
+                    <p class="text-sm text-gray-500 line-through">2.500.000₫</p>
+                    <p class="text-lg font-bold text-red-600-flower">2.300.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden relative">
+                <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">-10%</span>
+                <img src="/FE/assets/img/flowers/dao-cam-ha-lan-280x373.jpg" alt="Hoa Đào Tết" class="w-full h-auto">
+                <div class="p-3">
+                    <p class="text-sm font-semibold truncate">Cành Đào Tết</p>
+                    <p class="text-sm text-gray-500 line-through">280.000₫</p>
+                    <p class="text-lg font-bold text-red-600-flower">260.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden relative">
+                <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">-10%</span>
+                <img src="/FE/assets/img/flowers/33-hong-do-280x373.jpg" alt="Bó Hoa Hồng Đỏ" class="w-full h-auto">
+                <div class="p-3">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Hồng Đỏ</p>
+                    <p class="text-sm text-gray-500 line-through">1.200.000₫</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.100.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-md overflow-hidden relative">
+                <span class="absolute top-2 right-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded-full">-20%</span>
+                <img src="/FE/assets/img/flowers/5t-1-280x373.jpg" alt="Bó Hoa Tone Hồng" class="w-full h-auto">
+                <div class="p-3">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Tone Hồng</p>
+                    <p class="text-sm text-gray-500 line-through">500.000₫</p>
+                    <p class="text-lg font-bold text-red-600-flower">400.000₫</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- //SP Hoa Sinh Nhật -->
+
+    <div class="container mx-auto px-4 mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-red-300 pb-2 mb-4">Hoa Sinh Nhật</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/bo-hoa-baby-xanh-big-sieu-to-280x373.jpg" alt="Bó Hoa Baby Xanh Siêu To" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Baby Xanh Siêu To</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.500.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/hop-hoa-tone-hong-280x373.jpg.webp" alt="Ngọt Ngào" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Ngọt Ngào</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.200.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/shopping.webp" alt="Hoa Chuẩn Đời Cô" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Tặng Vợ</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.100.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/lang-vang-xanh-280x373.jpg" alt="Giỏ Hoa - Xanh Trắng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Giỏ Hoa - Xanh Trắng</p>
+                    <p class="text-lg font-bold text-red-600-flower">900.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/download.jpg" alt="Bó Hoa - Ngây Thơ" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa - Ngây Thơ</p>
+                    <p class="text-lg font-bold text-red-600-flower">950.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/lang-hoa-dep-pastel-280x373.jpg" alt="Hoa Cát Tường - Hồng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Lẳng Hoa Hồng</p>
+                    <p class="text-lg font-bold text-red-600-flower">850.000₫</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!-- //Hoa khai trương -->
+
+    <div class="container mx-auto px-4 mt-8">
+        <div class="bg-red-700 bg-opacity-80 p-8 flex items-center justify-between rounded-lg overflow-hidden shadow-xl" style="background-image: url('https://via.placeholder.com/1200x400/A52A2A/FFFFFF?text=Banner+Khai+Truong'); background-size: cover; background-position: center;">
+             <div class="text-white">
+                <h3 class="text-4xl font-bold tracking-widest">HOA KHAI TRƯƠNG</h3>
+                <h4 class="text-2xl mt-1">HOA CHÚC MỪNG</h4>
+                <button class="mt-4 bg-white text-red-700 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+                    XEM NGAY
+                </button>   
+            </div>
+            <img src="/FE/assets/img/flowers/bo-hoa-hong-280x373.jpg" alt="Hoa Khai Trương" class="w-40 md:w-60 h-auto object-cover rounded-full shadow-lg">
+        </div>
+    </div>
+    
+    <div class="container mx-auto px-4 mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-red-300 pb-2 mb-4">Hoa Bó</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/33-hong-do-280x373.jpg" alt="Bó Hoa Hồng Đỏ" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Hồng Đỏ - Đam Mê</p>
+                    <p class="text-lg font-bold text-red-600-flower">590.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/gio-hoa-huong-duong-280x373.jpg" alt="Bó Hoa Hướng Dương" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Hướng Dương 3 Bông</p>
+                    <p class="text-lg font-bold text-red-600-flower">600.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/hoa-sinh-nhat-dep-280x373.jpg" alt="Bó Hoa Baby Bạc" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa BABY Bạc</p>
+                    <p class="text-lg font-bold text-red-600-flower">800.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/lang-hoa-dep-pastel-280x373.jpg" alt="Love For You" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Love For You</p>
+                    <p class="text-lg font-bold text-red-600-flower">890.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/shopping.webp" alt="Bó Hoa Hồng Đỏ - Bùng Đỏ" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Hồng Đỏ - Bùng Đỏ</p>
+                    <p class="text-lg font-bold text-red-600-flower">850.000₫</p>
+                </div>
+            </div>
+            <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/bo-hoa-dep-tone-hong-280x373.jpg" alt="Hoa Đẹp Tone Hồng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Bó Hoa Đẹp Tone Hồng</p>
+                    <p class="text-lg font-bold text-red-600-flower">650.000₫</p>
+                </div>
+            </div>
+        </div>
+         <div class="text-center mt-6">
+            <a href="#" class="inline-block border border-red-600 text-red-600 font-semibold py-2 px-8 rounded-full hover:bg-red-50 transition duration-300">
+                XEM TẤT CẢ
+            </a>
+        </div>
+    </div>
+    
+<!-- //Bó hoa đẹp -->
+
+    <div class="container mx-auto px-4 mt-8">
+        <div class="bg-pink-600 p-6 flex items-center justify-between rounded-lg overflow-hidden shadow-xl">
+             <div class="text-white">
+                <h3 class="text-3xl font-bold">BÓ HOA ĐẸP</h3>
+                <h4 class="text-xl mt-1">GIÁ YÊU CHỈ TỪ 99K</h4>
+                <button class="mt-4 bg-white text-pink-600 font-bold py-2 px-6 rounded-full hover:bg-gray-100 transition duration-300">
+                    XEM NGAY
+                </button>
+            </div>
+            <img src="/FE/assets/img/flowers/lang-hoa-dep-lux-A30-280x373.jpg" alt="Bó Hoa Sale" class="w-24 md:w-32 h-auto object-cover rounded-lg shadow-lg">
+        </div>
+    </div>
+
+<!-- //Hoa khai trương -->
+
+    <div class="container mx-auto px-4 mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-red-300 pb-2 mb-4">Hoa Khai Trương</h2>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/lang-vang-xanh-280x373.jpg" alt="Khai Trương Vàng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Khai Trương Vàng</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.490.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/download (1).jpg" alt="Khai Trương Đỏ Rực" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Khai Trương Đỏ Rực</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.890.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/images.jpg" alt="Lẵng Đỏ Sang Trọng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Lẵng Đỏ Sang Trọng</p>
+                    <p class="text-lg font-bold text-red-600-flower">2.300.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/images (1).jpg" alt="Khai Trương Hồng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Khai Trương Hồng</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.650.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/images (2).jpg" alt="Khai Trương Tím" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Khai Trương Tím Mộng Mơ</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.450.000₫</p>
+                </div>
+            </div>
+             <div class="product-card bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="/FE/assets/img/flowers/images (3).jpg" alt="Khai Trương Nắng Vàng" class="w-full h-auto">
+                <div class="p-3 text-center">
+                    <p class="text-sm font-semibold truncate">Khai Trương Nắng Vàng</p>
+                    <p class="text-lg font-bold text-red-600-flower">1.780.000₫</p>
+                </div>
+            </div>
+        </div>
+         <div class="text-center mt-6">
+            <a href="#" class="inline-block border border-red-600 text-red-600 font-semibold py-2 px-8 rounded-full hover:bg-red-50 transition duration-300">
+                XEM TẤT CẢ
+            </a>
+        </div>
+    </div>
+    
+    <div class="container mx-auto px-4 mt-8 py-8">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-bold text-red-600-flower mb-4">SHOP FLOWER TƯƠI - ĐẶT HOA ONLINE - GIAO HOA TẬN NƠI - TOÀN QUỐC ĐA TỈNH THÀNH</h2>
+            <div class="text-gray-700 text-sm space-y-4">
+                <p>Shop hoa tươi **FLOWER** chuyên cung cấp dịch vụ đặt hoa online, giao hoa tận nơi, với đa dạng các sản phẩm hoa tươi chất lượng, giá cả phải chăng, phù hợp với mọi nhu cầu và ngân sách của khách hàng.</p>
+                <p>Với đội ngũ thợ cắm hoa **chuyên nghiệp** và **tận tâm**, FLOWER cam kết mang đến những sản phẩm hoa tươi đẹp, sáng tạo và ý nghĩa, giúp bạn gửi gắm trọn vẹn thông điệp yêu thương đến người nhận. Đặc biệt, chúng tôi có dịch vụ **Giao hoa siêu tốc** chỉ trong vòng 1-2 giờ.</p>
+                <p>**FLOWER** là một shop hoa tươi trực tuyến, chuyên cung cấp các loại hoa: **Hoa Bó, Hoa Lẵng, Hộp Hoa, Hoa Sinh Nhật, Hoa Khai Trương, Hoa Chia Buồn, Hoa Cưới** và nhiều loại hoa khác. Chúng tôi luôn cập nhật các mẫu hoa mới nhất, theo xu hướng để đáp ứng mọi sở thích của khách hàng.</p>
+                <p>**Đến với FLOWER, quý khách sẽ được:**</p>
+                <ul class="list-disc list-inside ml-4">
+                    <li>**Chất lượng hoa tươi 100%:** Cam kết hoa tươi mới, bền màu.</li>
+                    <li>**Giá cả cạnh tranh:** Đảm bảo mức giá tốt nhất trên thị trường.</li>
+                    <li>**Giao hàng nhanh chóng & chính xác:** Giao hoa tận nơi, đúng giờ tại hơn 63 tỉnh thành Việt Nam.</li>
+                    <li>**Hỗ trợ 24/7:** Đội ngũ tư vấn nhiệt tình, chu đáo.</li>
+                </ul>
+                <p>Ngoài việc cung cấp các bó hoa, lẵng hoa, **FLOWER** còn cung cấp dịch vụ trang trí sự kiện, trang trí tiệc cưới, sinh nhật, v.v., với đội ngũ thiết kế chuyên nghiệp và tận tâm.</p>
+                <p>Hãy đến với **FLOWER.vn** và trải nghiệm dịch vụ hoa tươi tuyệt vời nhất!</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mx-auto px-4 mt-8 py-4">
+        <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">CÂU HỎI THƯỜNG GẶP</h2>
+        
+        <div class="space-y-2">
+            <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center">
+                    FLOWER cung cấp sản phẩm gì?
+                    <span class="text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </button>
+            </div>
+             <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center">
+                    Sản phẩm hoa tươi FLOWER có giao tận nhà không?!
+                    <span class="text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </button>
+            </div>
+             <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center">
+                    Sản phẩm FLOWER có đảm bảo chất lượng và đúng mẫu không?
+                    <span class="text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </button>
+            </div>
+             <div class="bg-white p-4 rounded-lg shadow-sm border border-red-100">
+                <button class="w-full text-left font-semibold text-gray-800 flex justify-between items-center">
+                    Khi mua hoa có được xuất hóa đơn tài chính không?!
+                    <span class="text-red-600">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="mt-12">
+        <div class="bg-red-600 py-4">
+            <div class="container mx-auto px-4 flex items-center justify-center space-x-4">
+                <p class="text-white text-sm font-semibold flex items-center">
+                    <span class="mr-2">✉️</span> ĐĂNG KÝ NHẬN TIN TỪ FLOWER ...và nhiều phiếu giảm giá!
+                </p>
+                <div class="flex flex-grow max-w-sm">
+                    <input type="email" placeholder="Nhập email của bạn tại đây" class="p-2 flex-grow rounded-l-md focus:outline-none">
+                    <button class="bg-gray-800 text-white p-2 px-4 rounded-r-md hover:bg-gray-700">
+                        Đăng ký
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-8 bg-white border-t border-red-100">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+                <div>
+                    <img src="/FE/assets/img/banner-logo/logo.jpg" alt="FLOWER Logo" class="w-20 logo-responsive mb-2">
+                    <span class="text-3xl font-black text-red-600-flower tracking-wider">FLOWER<span class="text-xl font-normal">.vn</span></span>
+                    <p class="mt-4 text-gray-600 flex items-center">
+                        <svg class="w-5 h-5 mr-2 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.55 4.55L15 19m-4-7h8"></path></svg>
+                        Bạn cần hỗ trợ 24/7
+                    </p>
+                    <p class="text-red-600 font-bold">012.345.678 | 083.222.233</p>
+                </div>
+                
+                <div>
+                    <h5 class="font-bold mb-3 text-gray-800">Tin Nhanh</h5>
+                    <ul class="space-y-1 text-gray-600">
+                        <li><a href="#" class="hover:text-red-600-flower">Hoa Đẹp Tặng Vợ/Bồ</a></li>
+                        <li><a href="#" class="hover:text-red-600-flower">Bó Hoa Đẹp</a></li>
+                        <li><a href="#" class="hover:text-red-600-flower">Lẵng Hoa Đẹp</a></li>
+                        <li><a href="#" class="hover:text-red-600-flower">Hoa Sinh Nhật</a></li>
+                        <li><a href="#" class="hover:text-red-600-flower">LUXURY FLOWER</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="font-bold mb-3 text-gray-800">Customer Care</h5>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Hotline: 0943154187</li>
+                        <li><a href="#" class="hover:text-red-600-flower">Kiểm Tra Đơn Hàng</a></li>
+                        <li><a href="#" class="hover:text-red-600-flower">Shop Hoa Tươi</a></li>
+                        <li><a href="#" class="hover:text-red-600-flower">ĐĂNG NHẬP & ĐĂNG KÝ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="font-bold mb-3 text-gray-800">Đại Việt Mới</h5>
+                    <p class="text-gray-600">Vì quyết tâm đưa hoa tươi cho phái nữ mầm hạnh phúc vừa hết nỗi ngất ngây.</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 pt-4 border-t border-red-100 flex justify-between items-center text-xs text-gray-500">
+                <p>® Flower.vn - All Rights Reserved</p>
+                <div class="flex space-x-2">
+                    <span class="font-bold text-gray-600">Visa | Master | PayPal | Skrill | VN Pay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
