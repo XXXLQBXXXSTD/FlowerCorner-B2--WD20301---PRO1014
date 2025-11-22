@@ -1,0 +1,44 @@
+/*
+ * File: style.css
+ * Dùng cho trang FLOWER.vn
+ */
+
+/* ======================================= */
+/* 1. CSS Tùy Chỉnh Cơ Bản */
+/* ======================================= */
+
+body {
+    /* Nền hồng nhạt */
+    background-color: #ffe6e6; 
+    font-family: Arial, sans-serif;
+}
+
+/* Loại bỏ hiệu ứng sọc dọc và chỉ giữ lại màu nền */
+.striped-bg {
+    background-color: #ffe6e6;
+}
+
+/* Màu chữ thương hiệu đỏ đậm cho FLOWER.vn */
+.text-red-600-flower {
+    /* Màu đỏ đậm */
+    color: #E3004C; 
+}
+
+/* ======================================= */
+/* 2. Style Sản Phẩm & Logo */
+/* ======================================= */
+
+/* Đảm bảo hình ảnh sản phẩm có tỷ lệ khung hình nhất quán */
+.product-card img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+/* Style tùy chỉnh cho logo để đảm bảo không bị ép/méo */
+.logo-responsive {
+    /* Chiều cao tự động */
+    height: auto; 
+    max-width: 100%;
+    /* Đảm bảo hình ảnh vừa vặn mà không bị cắt */
+    object-fit: contain; 
+}
